@@ -1,13 +1,15 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 8px;
+  row-gap: 15px;
   margin-bottom: 50px;
-
-  list-style: none;
-
-  & .item + .item {
-    margin-left: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 8px;
   }
+
 
   &-button {
     padding: 6px 22px;

@@ -838,11 +838,15 @@ img {
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  list-style: none; }
-  .filter .item + .item {
-    margin-left: 8px; }
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 50px; }
+  @media screen and (min-width: 768px) {
+    .filter {
+      justify-content: center;
+      gap: 8px; } }
   .filter-button {
     padding: 6px 22px;
     background-color: var(--secondary-background);
@@ -863,26 +867,41 @@ img {
       color: var(--secondary-color);
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); }
 
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  @media screen and (min-width: 1200px) {
+    .projects {
+      padding-top: 94px;
+      padding-bottom: 94px; } }
+
 .portfolio-thumb {
   position: relative;
   overflow: hidden; }
 
 .project-list {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 30px; }
   .project-list.item {
-    width: 370px;
+    width: 100%;
     background: var(--secondary-color); }
+    @media screen and (min-width: 768px) {
+      .project-list.item {
+        width: calc((100% - 30px) / 2); } }
 
 .project-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: var(--main-color); }
   .project-link:hover, .project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); }
 
 .description {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
