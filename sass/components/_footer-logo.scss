@@ -1,0 +1,17 @@
+.footer .logo {
+  margin-bottom: 28px;
+  margin-right: 0;
+  padding: 0;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+}
+.footer-blue-logo {
+  color: var(--brand-color);
+}
+.footer-black-logo {
+  color: var(--secondary-color);
+}

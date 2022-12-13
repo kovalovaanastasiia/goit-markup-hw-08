@@ -1,0 +1,26 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+
+  background-color: var(--background-color);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.tablet-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+  }
+}
