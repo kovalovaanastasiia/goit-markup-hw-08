@@ -1,8 +1,5 @@
 .modal-title {
-  margin-top: 40px;
   margin-bottom: 12px;
-  margin-right: 40px;
-  margin-left: 40px;
   font-weight: 700;
   font-size: 19px;
   line-height: 1.15;
@@ -13,12 +10,10 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
-  margin-left: 10px;
-  @media screen and (min-width: 480px) {
-    margin-right: 40px;
-    margin-left: 40px;
-  }
+  //@media screen and (min-width: 480px) {
+  //  margin-right: 40px;
+  //  margin-left: 40px;
+  //}
 }
 .input-wrapper {
   position: relative;
@@ -109,6 +104,7 @@
 }
 .checkbox-text {
   display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
   position: relative;
@@ -120,7 +116,6 @@
   color: var(--secondary-text-color);
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    width: 528px;
   }
 }
 .policy {
@@ -156,7 +151,6 @@
 .submit-button {
   display: block;
   margin-top: 30px;
-  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;

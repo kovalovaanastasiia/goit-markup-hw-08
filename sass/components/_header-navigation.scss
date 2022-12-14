@@ -11,14 +11,11 @@
 .navigation-list {
   gap: 50px;
   margin-left: 88px;
-  margin-right: 90px;
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-    margin-right: 305px;
-  }
+
 }
 
 .nav-link {
+  display: block;
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
